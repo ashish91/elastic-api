@@ -1,0 +1,15 @@
+development: &default
+  host: 'localhost'
+  port: '9200'
+  user: 'elastic'
+  password: '8pVSZ70a5gmgO+W-thRU'
+  scheme: 'https'
+  transport_options:
+    ssl:
+      verify: false
+test:
+  <<: *default
+staging:
+  <<: *default
+production:
+  <<: *default
